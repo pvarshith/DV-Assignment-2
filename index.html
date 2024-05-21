@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Waste Management Insights at Santa Clara University</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Waste Management Insights at Santa Clara University</h1>
+    </header>
+    <div id="filters">
+        <label for="buildingSelector">Select a Building:</label>
+        <select id="buildingSelector">
+            <option value="All">All Buildings</option>
+            <option value="Facilities">Facilities</option>
+            <option value="Swig">Swig</option>
+            <option value="Vari Hall & Lucas Hall">Vari Hall & Lucas Hall</option>
+            <option value="Malley">Malley</option>
+            <option value="University Villas">University Villas</option>
+            <option value="Graham">Graham</option>
+            <option value="Benson Center">Benson Center</option>
+            <option value="Learning Commons">Learning Commons</option>
+        </select>
+        <div id="buildingCheckboxes">
+            <!-- Dynamically filled with JavaScript -->
+        </div>
+    </div>
+    <div id="charts">
+        <canvas id="barChart"></canvas>
+    </div>
+
+    
+    
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>
